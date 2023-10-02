@@ -81,14 +81,15 @@ The repository includes example programs in the output/codes directory. These pr
 
 ### program to find out factorial of given number 
 
-81010001   ; Input: Read a number into register 1
-09020001   ; Move the value in register 2 to memory location 1
-24020000   ; Decrement the value in register 2
-13020000   ; Multiply the value in memory location 2 by the value in register 2
-24020000   ; Decrement the value in register 2
-32020003   ; Jump to instruction 3 if the value in register 2 is not zero
-82010004   ; Output: Display the value in register 1 (factorial result)
-90000000   ; Halt: End of program
+- 81010001   ; Input: Read a number into register 1
+- 09020001   ; Move the value in register 2 to memory location 1
+- 24020000   ; Decrement the value in register 2
+- 13020000   ; Multiply the value in memory location 2 by the value in register 2
+- 24020000   ; Decrement the value in register 2
+- 32020003   ; Jump to instruction 3 if the value in register 2 is not zero
+- 82010004   ; Output: Display the value in register 1 (factorial result)
+- 90000000   ; Halt: End of program
+
 
 >[!WARNING]
 >Do not include semicolon and comments in your progarm file

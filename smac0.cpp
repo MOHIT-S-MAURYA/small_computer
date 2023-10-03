@@ -130,6 +130,7 @@ public:
     {   
         if(registers!=0 && location==0){
             accumulator =accumulator+ reg[registers];
+            // cout<<accumulator<<"----"<<memory[location]<<endl;
         }else if(registers==0 && location !=0){
             accumulator +=accumulator+ memory[location];
         }else{

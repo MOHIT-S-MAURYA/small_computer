@@ -246,18 +246,18 @@ public:
     // JUMP STATEMENTS
     // jump-30
     void jump(int location)
-    {
+    {   cout<<"jumped back "<<endl;
         pc = location;
         pc++;
     }
 
     // jump if nagative-31
     void jump_if_negative(int registers, int location)
-    {
+    {       
             if (registers == 01)
-            {
+            { 
                 if (accumulator < 0)
-                {
+                {   
                     pc = location;
                 }
                 else
